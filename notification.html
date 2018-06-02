@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#1DA1F2"/>
+    <title>Laporin</title>
+    <link rel="icon" href="images/icons/laporin.ico" type="image/gif" sizes="any">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="./manifest.json">
+  </head>
+  <body id="notification">
+
+    <div>
+      <nav>
+      	<div class="cell isi-laporan">
+      		<a href="home.html">
+      			<i class="fa fa-pencil-square-o fa-lg"  aria-hidden="true"></i>
+      		</a>
+      	</div>
+      	<div class="cell isi-laporan">
+      		<a href="news.html">
+      			<i class="fa fa-newspaper-o  fa-lg"  aria-hidden="true"></i>
+      		</a>
+      	</div>
+      	<div class="cell isi-laporan">
+      		<a href="donation.html">
+      			<i class="fa fa-handshake-o fa-lg"  aria-hidden="true"></i>
+      		</a>
+      	</div>
+      	<div class="cell isi-laporan">
+      		<a href="notification.html" class="active">
+      			<i class="fa fa-globe fa-lg" aria-hidden="true"></i>
+      		</a>
+      	</div>
+      	<div class="cell isi-laporan">
+      		<a href="menu.html">
+      			<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+      		</a>
+      	</div>
+      </nav>
+      <div class="header">
+        <h1>Notification</h1>
+      </div>
+      <div class="notif-wrapper">
+        <div class="notif">
+          <div class="profile">
+            <img src="images/department/dishub.png" alt="">
+          </div>
+          <div class="notif-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p>Yesterday at 22:21</p>
+          </div>
+        </div>
+        <div class="notif">
+          <div class="profile">
+            <img src="images/profil1.jpg" alt="">
+          </div>
+          <div class="notif-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p>Yesterday at 22:21</p>
+          </div>
+        </div>
+        <div class="notif">
+          <div class="profile">
+            <img src="images/department/pu.jpg" alt="">
+          </div>
+          <div class="notif-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p>Yesterday at 22:21</p>
+          </div>
+        </div>
+        <div class="notif">
+          <div class="profile">
+            <img src="images/department/lingdup.jpg" alt="">
+          </div>
+          <div class="notif-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p>Yesterday at 22:21</p>
+          </div>
+        </div>
+        <div class="notif">
+          <div class="profile">
+            <img src="images/department/lingdup.jpg" alt="">
+          </div>
+          <div class="notif-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p>Yesterday at 22:21</p>
+          </div>
+        </div>
+        <div class="notif">
+          <div class="profile">
+            <img src="images/department/pu.jpg" alt="">
+          </div>
+          <div class="notif-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p>Yesterday at 22:21</p>
+          </div>
+        </div>
+        <div class="notif">
+          <div class="profile">
+            <img src="images/profil4.jpg" alt="">
+          </div>
+          <div class="notif-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p>Yesterday at 22:21</p>
+          </div>
+        </div>
+        <div class="notif">
+          <div class="profile">
+            <img src="images/department/dishub.png" alt="">
+          </div>
+          <div class="notif-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p>Yesterday at 22:21</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/vue.min.js" charset="utf-8"></script>
+    <script src="js/hammer.min.js" charset="utf-8"></script>
+    <script src="js/main.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      var post = document.getElementById('notification');
+
+      var postPg = new Hammer(post);
+
+      postPg.on("swiperight", function(ev) {
+        window.location.href = "donation.html";
+      });
+      postPg.on("swipeleft", function(ev) {
+        window.location.href = "notification.html";
+      });
+    </script>
+  </body>
+</html>

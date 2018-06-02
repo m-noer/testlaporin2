@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#1DA1F2"/>
+    <title>Laporin</title>
+    <link rel="icon" href="images/icons/laporin.ico" type="image/gif" sizes="any">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="./manifest.json">
+  </head>
+  <body>
+    <div id="login">
+      <div class="logo">
+        <img src="images/logo_laporin.png" alt="Laporin Logo">
+      </div>
+      <div class="form" id="form-login">
+        <form action="home.html">
+          <div class="username">
+            <input type="text" placeholder="Username">
+          </div>
+          <div class="password">
+            <input type="password" placeholder="Password">
+          </div>
+          <div class="btnLogin">
+            <input onclick="window.location.href='home.html'" type="submit" value="Login" onclick="toHome()">
+          </div>
+          <div class="btnSignUp">
+            <input onclick="signUp()" type="button" value="Sign Up for Laporin">
+          </div>
+        </form>
+      </div>
+      <div class="form" id="form-signUp">
+        <form action="#">
+          <div class="FullName">
+            <input type="text" placeholder="Full Name">
+          </div>
+          <div class="address">
+            <input type="text" placeholder="Address">
+          </div>
+          <div class="Username">
+            <input type="text" placeholder="Username">
+          </div>
+          <div class="password">
+            <input type="password" placeholder="Password">
+          </div>
+          <div class="btnLogin">
+            <input type="submit" value="Sign Up">
+          </div>
+          <div class="btnSignUp">
+            <input onclick="signIn()" type="button" value="Login for Laporin">
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="js/vue.min.js" charset="utf-8"></script>
+    <script src="js/hammer.min.js" charset="utf-8"></script>
+    <script src="js/main.js" charset="utf-8"></script>
+  </body>
+</html>

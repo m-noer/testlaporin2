@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#1DA1F2"/>
+    <title>Laporin</title>
+    <link rel="icon" href="images/icons/laporin.ico" type="image/gif" sizes="any">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body onload="transitionComm()">
+    <nav id="nav">
+      <div class="cell isi-laporan">
+        <a href="home.html" class="active">
+          <i class="fa fa-pencil-square-o fa-lg"  aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="cell isi-laporan">
+        <a href="news.html">
+          <i class="fa fa-newspaper-o  fa-lg"  aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="cell isi-laporan">
+        <a href="#">
+          <i class="fa fa-handshake-o fa-lg"  aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="cell isi-laporan">
+        <a href="#">
+          <i class="fa fa-globe fa-lg" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="cell isi-laporan">
+        <a href="#">
+          <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+        </a>
+      </div>
+    </nav>
+    <div class="search-box" id="search">
+      <div class="input-box">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input type="text" placeholder="Search" v-model="search">
+      </div>
+    </div>
+    <div id="app">
+      <div id="content2">
+        <div class="post-detail">
+          <div class="box" >
+            <div class="profil">
+              <div class="photo">
+                <img src="images/profil1.jpg" alt="profil picture">
+              </div>
+              <div class="user">
+                <h1>Sarah Sunarto</h1>
+                <p>2 minutes ago</p>
+              </div>
+            </div>
+            <div class="detail">
+              <h1>Permintaan Perbaikan Jalan</h1>
+              <p>Pemerintah Kota Jogja, Jalanan di daerah Malioboro.banyak sekali jalan yang rusak parah dan sangat tidak aman digunakan oleh pengguna jalan</p>
+            </div>
+            <div class="category">
+              <div class="tag">
+                <b>#Dinas Terkait</b>
+                <b>#Dinas Perbaikan Jalan</b>
+              </div>
+            </div>
+          </div>
+          <div class="box2">
+            <div class="row">
+              <div class="col-6 icon">
+                <p><i class="fa fa-thumbs-up" aria-hidden="true"></i> Up</p>
+              </div>
+              <div class="col-6 icon">
+                <p><i class="fa fa-share-alt" aria-hidden="true"></i> Share</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <ul>
+            <li class="comment">
+              <div class="cell1">
+                <div class="photo">
+                  <img src="images/profil4.jpg" alt="profil picture">
+                </div>
+              </div>
+              <div class="isi-comment">
+                <h1>Sudarmawan</h1>
+                <p>Jadi gini dan gini gini , you harus ini dan ini biar gini itu dan itu, baik kawan kawan</p>
+                <p>1 minutes ago</p>
+              </div>
+            </li>
+            <li class="comment">
+              <div class="cell1">
+                <div class="photo">
+                  <img src="images/profil4.jpg" alt="profil picture">
+                </div>
+              </div>
+              <div class="isi-comment">
+                <h1>Sudarmawan</h1>
+                <p>Jadi gini dan gini gini , you harus ini dan ini biar gini itu dan itu, baik kawan kawan</p>
+                <p>1 minutes ago</p>
+              </div>
+            </li>
+            <li class="comment">
+              <div class="cell1">
+                <div class="photo">
+                  <img src="images/profil4.jpg" alt="profil picture">
+                </div>
+              </div>
+              <div class="isi-comment">
+                <h1>Sudarmawan</h1>
+                <p>Jadi gini dan gini gini , you harus ini dan ini biar gini itu dan itu, baik kawan kawan</p>
+                <p>1 minutes ago</p>
+              </div>
+            </li>
+            <todo-list :todos="todos"></todo-list>
+          </ul>
+        </div>
+      </div>
+      <todo-form @todo-created="addTodo"></todo-form>
+    </div>
+
+    <footer id="footer" class="post-detail-page"></footer>
+
+    <script src="js/vue.min.js" charset="utf-8"></script>
+    <script src="js/jquery.min.js" charset="utf-8"></script>
+    <script src="js/hammer.min.js" charset="utf-8"></script>
+    <script src="js/barba.js" type="text/javascript"></script>
+    <script src="js/main.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      var post = document.getElementById('app');
+
+      var postPg = new Hammer(post);
+
+      postPg.on("swiperight", function(ev) {
+          window.history.back();
+      });
+
+      function scrollWin() {
+        window.scrollBy(0, 9999999);
+      }
+
+    </script>
+  </body>
+</html>

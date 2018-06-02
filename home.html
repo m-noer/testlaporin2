@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#1DA1F2"/>
+    <title>Laporin</title>
+    <link rel="icon" href="images/icons/laporin.ico" type="image/gif" sizes="any">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="./manifest.json">
+    <script src="js/vue.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div id="home">
+      <nav>
+      	<div class="cell isi-laporan">
+      		<a href="home.html" class="active">
+      			<i class="fa fa-pencil-square-o fa-lg"  aria-hidden="true"></i>
+      		</a>
+      	</div>
+      	<div class="cell isi-laporan">
+      		<a href="news.html">
+      			<i class="fa fa-newspaper-o  fa-lg"  aria-hidden="true"></i>
+      		</a>
+      	</div>
+      	<div class="cell isi-laporan">
+      		<a href="donation.html">
+      			<i class="fa fa-handshake-o fa-lg"  aria-hidden="true"></i>
+      		</a>
+      	</div>
+      	<div class="cell isi-laporan">
+      		<a href="notification.html">
+      			<i class="fa fa-globe fa-lg" aria-hidden="true"></i>
+      		</a>
+      	</div>
+      	<div class="cell isi-laporan">
+      		<a href="menu.html">
+      			<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+      		</a>
+      	</div>
+      </nav>
+      <div class="search-box" id="search">
+      	<div class="input-box">
+      		<i class="fa fa-search" aria-hidden="true"></i>
+      		<input type="text" placeholder="Search" v-model="search">
+      	</div>
+      </div>
+      <div class="lapor">
+        <img src="images/profil.jpg" alt="profil picture">
+        <span>Tulis laporanmu disini</span>
+      </div>
+      <!-- End of .lapor -->
+      <div id="laporan">
+        <div class="post" v-for="lapor in searchLaporan">
+          <div class="box" >
+            <div class="profil">
+              <div class="photo">
+                <img v-bind:src="lapor.img" alt="profil picture">
+              </div>
+              <div class="user">
+                <h1>{{lapor.name}}</h1>
+                <p>{{lapor.time}}</p>
+              </div>
+            </div>
+            <div class="detail">
+              <h1>{{lapor.title}} > <span>{{lapor.progress}} %</span></h1>
+              <p>{{lapor.content}}</p>
+            </div>
+            <div class="category">
+              <div class="tag">
+                <b>#Dinas Terkait</b>
+                <b>#Indonesia</b>
+              </div>
+            </div>
+          </div>
+          <div class="box2">
+            <div class="row">
+              <div class="col-4 like icon">
+                <p onclick="sound()"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Up</p>
+              </div>
+              <div class="col-4 share icon">
+                <p><a href="detail-post.html"><i class="fa fa-comment" aria-hidden="true"></i> Comment</a></p>
+              </div>
+              <div class="col-4 Comment icon">
+                <p onclick="sound()"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of .laporan-post -->
+    </div>
+
+    <script src="js/hammer.min.js" charset="utf-8"></script>
+    <script src="js/main.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      var bleep = new Audio();
+      bleep.src = "button.mp3";
+      function sound() {
+        bleep.play();
+      }
+      var post = document.getElementById('home');
+
+      var postPg = new Hammer(post);
+
+      postPg.on("swipeleft", function(ev) {
+        window.location.href = "news.html";
+      });
+    </script>
+  </body>
+</html>

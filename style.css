@@ -1,0 +1,113 @@
+body {
+  background: #1DA1F2;
+  font-family: sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.main {
+  z-index: 0;
+}
+
+.loader {
+  z-index: 9999;
+}
+
+.logo img {
+  width: 90%;
+}
+
+.loaded .loader {
+  opacity: 0;
+  display: none;
+}
+
+section {
+  display: table;
+}
+
+section span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.page1 {
+  background: #1DA1F2;
+  color: white;
+  line-height: 1.4em;
+}
+
+.page2 {
+  background: #4CAF50;
+  color: white;
+}
+
+.page3 {
+  background: #ff5722;
+  color: white;
+}
+
+.btn {
+  height: 40px;
+  width: 100px;
+  background: none;
+  border: 1px solid white;
+  cursor: pointer;
+  overflow: hidden;
+
+}
+
+.btn:hover {
+  background: #eee;
+  color: #212121;
+
+}
+
+.btn a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+@media screen and (max-width: 560px) {
+  body {
+    text-align: center;
+  }
+  .row {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.loader {
+  height: 100vh;
+  width: 100%;
+  background: #1DA1F2;
+  text-align: center;
+  position: fixed;
+}
+
+.loader img {
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 50%;
+  transform: translateY(-40%);
+  transition: ease-in;
+}
+
+#lottie {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  text-align: center;
+  opacity: 1;
+}
+
+#bm {
+  height: 100vh;
+  width: 100%;
+}
