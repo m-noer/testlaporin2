@@ -554,3 +554,14 @@ footer.post-detail-page {
 .right {
   text-align: right;
 }
+
+/* Srollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  background-color: #1DA1F2;
+}
