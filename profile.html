@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#1DA1F2"/>
+    <title>Laporin</title>
+    <link rel="icon" href="images/icons/laporin.ico" type="image/gif" sizes="any">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="./manifest.json">
+    <script src="js/vue.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <div class="profile">
+      <div class="head">
+        <img src="images/profil.jpg" alt="">
+        <h1>Safa Kalila</h1>
+        <i class="fa fa-map-marker fa-lg"></i> Yogyakarta
+      </div>
+      <div class="total">
+        <div class="cell">
+          <i class="fa fa-pencil-square-o fa-lg"  aria-hidden="true"></i>
+          <h3>21 Laporin</h3>
+        </div>
+        <div class="cell">
+          <i class="fa fa-commenting-o fa-lg"  aria-hidden="true"></i>
+          <h3>18 Komenin</h3>
+        </div>
+        <div class="cell">
+          <i class="fa fa-handshake-o fa-lg"  aria-hidden="true"></i>
+          <h3>5 Donasiin</h3>
+        </div>
+      </div>
+      <div class="detail-profil">
+        <h2>About Me</h2>
+        <p>Interested in: manufacturing, technology and automation, general management: leadership and strategical thinking, youth development, and community empowerment.</p>
+        <hr>
+        <h2>Work</h2>
+        <p>Project Engineer for Personal Care Factory</p>
+        <hr>
+        <h2>Born</h2>
+        <p>June 4, 1993</p>
+      </div>
+    </div>
+
+    <script src="js/hammer.min.js" charset="utf-8"></script>
+    <script src="js/main.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      var bleep = new Audio();
+      bleep.src = "button.mp3";
+      function sound() {
+        bleep.play();
+      }
+      var post = document.getElementById('home');
+
+      var postPg = new Hammer(post);
+
+      postPg.on("swipeleft", function(ev) {
+        window.location.href = "news.html";
+      });
+    </script>
+  </body>
+</html>
