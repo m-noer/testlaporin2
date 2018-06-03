@@ -46,50 +46,52 @@
       		<input type="text" placeholder="Search" v-model="search">
       	</div>
       </div>
-      <div class="lapor">
-        <img src="images/profil.jpg" alt="profil picture">
-        <span>Tulis laporanmu disini</span>
-      </div>
-      <!-- End of .lapor -->
-      <div id="laporan">
-        <div class="post" v-for="lapor in searchLaporan">
-          <div class="box" >
-            <div class="profil">
-              <div class="photo">
-                <img v-bind:src="lapor.img" alt="profil picture">
+      <div class="content">
+        <div class="lapor">
+          <img src="images/profil.jpg" alt="profil picture">
+          <span>Tulis laporanmu disini</span>
+        </div>
+        <!-- End of .lapor -->
+        <div id="laporan">
+          <div class="post" v-for="lapor in searchLaporan">
+            <div class="box" >
+              <div class="profil">
+                <div class="photo">
+                  <img v-bind:src="lapor.img" alt="profil picture">
+                </div>
+                <div class="user">
+                  <h1>{{lapor.name}}</h1>
+                  <p>{{lapor.time}}</p>
+                </div>
               </div>
-              <div class="user">
-                <h1>{{lapor.name}}</h1>
-                <p>{{lapor.time}}</p>
+              <div class="detail">
+                <h1>{{lapor.title}} > <span>{{lapor.progress}} %</span></h1>
+                <p>{{lapor.content}}</p>
+              </div>
+              <div class="category">
+                <div class="tag">
+                  <b>#Dinas Terkait</b>
+                  <b>#Indonesia</b>
+                </div>
               </div>
             </div>
-            <div class="detail">
-              <h1>{{lapor.title}} > <span>{{lapor.progress}} %</span></h1>
-              <p>{{lapor.content}}</p>
-            </div>
-            <div class="category">
-              <div class="tag">
-                <b>#Dinas Terkait</b>
-                <b>#Indonesia</b>
-              </div>
-            </div>
-          </div>
-          <div class="box2">
-            <div class="row">
-              <div class="col-4 like icon">
-                <p onclick="sound()"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Up</p>
-              </div>
-              <div class="col-4 share icon">
-                <p><a href="detail-post.html"><i class="fa fa-comment" aria-hidden="true"></i> Comment</a></p>
-              </div>
-              <div class="col-4 Comment icon">
-                <p onclick="sound()"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</p>
+            <div class="box2">
+              <div class="row">
+                <div class="col-4 like icon">
+                  <p onclick="sound()"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Up</p>
+                </div>
+                <div class="col-4 share icon">
+                  <p><a href="detail-post.html"><i class="fa fa-comment" aria-hidden="true"></i> Comment</a></p>
+                </div>
+                <div class="col-4 Comment icon">
+                  <p onclick="sound()"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <!-- End of .laporan-post -->
       </div>
-      <!-- End of .laporan-post -->
     </div>
 
     <script src="js/hammer.min.js" charset="utf-8"></script>
