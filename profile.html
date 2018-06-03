@@ -12,9 +12,36 @@
     <script src="js/vue.min.js" charset="utf-8"></script>
   </head>
   <body>
-
-    <div class="account">
+    <nav>
+      <div class="cell isi-laporan">
+        <a href="home.html">
+          <i class="fa fa-pencil-square-o fa-lg"  aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="cell isi-laporan">
+        <a href="news.html">
+          <i class="fa fa-newspaper-o  fa-lg"  aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="cell isi-laporan">
+        <a href="donation.html">
+          <i class="fa fa-handshake-o fa-lg"  aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="cell isi-laporan">
+        <a href="notification.html">
+          <i class="fa fa-globe fa-lg" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="cell isi-laporan">
+        <a href="menu.html" class="active">
+          <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+        </a>
+      </div>
+    </nav>
+    <div id="profile" class="account content">
       <div class="head">
+        <!-- <a href="menu.html"><span class="close">&times;</span></a> -->
         <img src="images/profil.jpg" alt="">
         <h1>Safa Kalila</h1>
         <i class="fa fa-map-marker fa-lg"></i> Yogyakarta
@@ -48,17 +75,13 @@
     <script src="js/hammer.min.js" charset="utf-8"></script>
     <script src="js/main.js" charset="utf-8"></script>
     <script type="text/javascript">
-      var bleep = new Audio();
-      bleep.src = "button.mp3";
-      function sound() {
-        bleep.play();
-      }
-      var post = document.getElementById('home');
+
+      var post = document.getElementById('profile');
 
       var postPg = new Hammer(post);
 
-      postPg.on("swipeleft", function(ev) {
-        window.location.href = "news.html";
+      postPg.on("swiperight", function(ev) {
+        window.location.href = "menu.html";
       });
     </script>
   </body>
