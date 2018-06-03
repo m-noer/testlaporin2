@@ -634,3 +634,68 @@ footer.post-detail-page {
   border-radius: 10px;
   background-color: #1DA1F2;
 }
+
+/* Account Pofile */
+.profile {
+  background: #fff;
+  height: 100vh;
+  color: #404040;
+}
+
+.head {
+  height: 300px;
+  width: 100%;
+  background: #1DA1F2;
+  text-align: center;
+  color: #f1f1f1;
+}
+
+.profile img {
+  width: 150px;
+  border-radius: 50%;
+  border: 5px solid #cbebff;
+  margin-top: 40px;
+  /* animation-name: color;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; */
+}
+
+.profile h1 {
+  font-weight: lighter;
+  font-size: 24px;
+  padding: 5px;
+}
+
+.total {
+  display: flex;
+  height: 80px;
+  padding: 5px 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #1DA1F2;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.total h3 {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.detail-profil {
+  padding: 25px;
+  padding-top: 10px;
+}
+
+.detail-profil h2 {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.detail-profil p {
+  margin-bottom: 10px;
+}
+
+.detail-profil h2{
+  color: #1DA1F2;
+}
