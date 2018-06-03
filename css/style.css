@@ -26,6 +26,13 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  color: #161616;
+}
+
+a {
+  text-decoration: none;
+  color: #161616;
+  width: 100%;
 }
 
 /* Transition page*/
@@ -362,12 +369,17 @@ footer.post-detail-page {
 
 }
 
+
 .notif {
   display: flex;
   align-items: center;
   padding: 10px;
   background: #fff;
   border-bottom: 1px solid #eee;
+}
+
+.notif:first-child{
+  margin-top: 50px;
 }
 
 .notif:last-child {
@@ -638,7 +650,7 @@ footer.post-detail-page {
 /* Account Pofile */
 .account {
   background: #fff;
-  height: 100vh;
+  height: 100%;
   color: #404040;
 }
 
@@ -685,6 +697,7 @@ footer.post-detail-page {
 .detail-profil {
   padding: 25px;
   padding-top: 10px;
+  margin-bottom: 50px;
 }
 
 .detail-profil h2 {
@@ -698,4 +711,136 @@ footer.post-detail-page {
 
 .detail-profil h2{
   color: #1DA1F2;
+}
+
+/* Menu */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.header img{
+  height: 100%;
+}
+
+
+
+.menu, .top-menu{
+  margin-top: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+.top-menu {
+  margin-top: 45px;
+}
+
+.menu img {
+  width: 35px;
+  border-radius: 50%;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 5px;
+  letter-spacing: 0.04em;
+}
+
+.item:last-child {
+  border: none;
+}
+
+.icon {
+  width: 40px
+}
+
+.item i {
+  color: #1DA1F2;
+  padding: 7px;
+}
+
+.menu-content {
+  padding: 10px;
+}
+
+.menu:last-child {
+  margin-bottom: 60px;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tg-list {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.tg-list-item {
+  margin: 0 2em;
+}
+
+.tgl {
+  display: none;
+}
+.tgl, .tgl:after, .tgl:before, .tgl *, .tgl *:after, .tgl *:before, .tgl + .tgl-btn {
+  box-sizing: border-box;
+}
+.tgl::-moz-selection, .tgl:after::-moz-selection, .tgl:before::-moz-selection, .tgl *::-moz-selection, .tgl *:after::-moz-selection, .tgl *:before::-moz-selection, .tgl + .tgl-btn::-moz-selection {
+  background: none;
+}
+.tgl::selection, .tgl:after::selection, .tgl:before::selection, .tgl *::selection, .tgl *:after::selection, .tgl *:before::selection, .tgl + .tgl-btn::selection {
+  background: none;
+}
+.tgl + .tgl-btn {
+  outline: 0;
+  display: block;
+  width: 2.5em;
+  height: 1.5em;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.tgl + .tgl-btn:after, .tgl + .tgl-btn:before {
+  position: relative;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+}
+.tgl + .tgl-btn:after {
+  left: 0;
+}
+.tgl + .tgl-btn:before {
+  display: none;
+}
+.tgl:checked + .tgl-btn:after {
+  left: 50%;
+}
+
+.tgl-light + .tgl-btn {
+  background: #f0f0f0;
+  border-radius: 2em;
+  padding: 2px;
+  transition: all .4s ease;
+}
+.tgl-light + .tgl-btn:after {
+  border-radius: 50%;
+  background: #fff;
+  transition: all .2s ease;
+}
+.tgl-light:checked + .tgl-btn {
+  background: #1DA1F2;
 }
