@@ -636,7 +636,7 @@ footer.post-detail-page {
 }
 
 /* Account Pofile */
-.profile {
+.account {
   background: #fff;
   height: 100vh;
   color: #404040;
@@ -650,7 +650,7 @@ footer.post-detail-page {
   color: #f1f1f1;
 }
 
-.profile img {
+.account img {
   width: 150px;
   border-radius: 50%;
   border: 5px solid #cbebff;
@@ -660,7 +660,7 @@ footer.post-detail-page {
   animation-iteration-count: infinite; */
 }
 
-.profile h1 {
+.account h1 {
   font-weight: lighter;
   font-size: 24px;
   padding: 5px;
