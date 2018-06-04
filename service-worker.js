@@ -8,6 +8,7 @@ const CACHE_NAMESPACE = 'laporin-'
 const PRECACHE = CACHE_NAMESPACE + 'precache-v3'
 const PRECACHE_LIST = [
   '/',
+  'index.html',
   '/css/style.css',
   '/css/bootstrap-grid.css',
   'font-awesome/css/font-awesome.min.css',
