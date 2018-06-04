@@ -104,7 +104,7 @@ Vue.component('todo-form', {
   }
 });
 Vue.component('todo-list', {
-  template: '<ul><li class="comment" v-for="todo in todos"><div class="cell1"><div class="photo"> <img src="images/profil.jpg" alt="profil picture"></div></div><div class="isi-comment"><h1>Sutiyoko</h1><p>{{todo}}</p><p>a few seconds ago</p></div></li></ul>',
+  template: '<ul><li class="comment" v-for="todo in todos"><div class="cell1"><div class="photo"> <img src="images/profil.jpg" alt="profil picture"></div></div><div class="isi-comment"><h1>Sifa Kalila</h1><p>{{todo}}</p><p>a few seconds ago</p></div></li></ul>',
   props: ['todos']
 });
 new Vue({
